@@ -1,6 +1,7 @@
 # Nextion-HMI-Screen-Date-Time-Correction
 Nextion HMI Screen Date-Time Correction
 
+# code
 //this code must be in btnSet button in Nextion HMI IDE.
 //Objects that should be in the screen design:
 //"numDay, numMonth, numYear, numHour, numMinute, numSecond" are Number.
