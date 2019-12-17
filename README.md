@@ -19,10 +19,10 @@ txtInfo.txt="" //day of week OR error information.<br>
 //developer: Ersin Kecis - ersinkecis@gmail.com<br>
 //date time: 16.12.2019 23:50<br>
 //date-time validation code start here:<br>
-if(numYear.val<0)<br>
+if(numYear.val<1999)<br>
 {<br>
   txtInfo.txt="You have entered an incorrect YEAR."<br>
-}else if(numMonth.val<0||numMonth.val>12)<br>
+}else if(numMonth.val<1||numMonth.val>12)<br>
 {<br>
   txtInfo.txt="You have entered an incorrect MONTH."<br>
 }else if(numMonth.val==2)<br>
@@ -31,24 +31,24 @@ if(numYear.val<0)<br>
   varMod.val%=4 //2019 mod 4 >--> equal >--> 3<br>
   if(varMod.val==0)<br>
   {<br>
-    if(numDay.val>29||numDay.val<0)<br>
+    if(numDay.val>29||numDay.val<1)<br>
     {<br>
       txtInfo.txt="You have entered an incorrect DAY."<br>
     }<br>
   }else<br>
   {<br>
-    if(numDay.val>28||numDay.val<0)<br>
+    if(numDay.val>28||numDay.val<1)<br>
     {<br>
       txtInfo.txt="You have entered an incorrect DAY."<br>
     }<br>
   }<br>
 }else if(numMonth.val==1||numMonth.val==3||numMonth.val==5||numMonth.val==7||numMonth.val==8||numMonth.val==10||numMonth.val==12)<br>
 {<br>
-  if(numDay.val>31||numDay.val<0)<br>
+  if(numDay.val>31||numDay.val<1)<br>
   {<br>
     txtInfo.txt="You have entered an incorrect DAY."<br>
   }<br>
-}else if(numDay.val>30||numDay.val<0)<br>
+}else if(numDay.val>30||numDay.val<1)<br>
 {<br>
   txtInfo.txt="You have entered an incorrect DAY."<br>
 }<br>
